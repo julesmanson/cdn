@@ -39,13 +39,27 @@ a:focus-visible {
   padding: 1.5rem 2rem;
 }
 .site-header-logo h1 {
+  margin: 0;
   font-size: 2rem;
   line-height: 1.5;
   font-weight: 100;
   text-transform: uppercase;
   text-align: center;
-  white-space: wrap;
+  white-space: normal;
 }
+/*
+.site-header-logo {
+  padding: 1.5rem 2rem;
+}
+.site-header-logo h1 {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: normal;
+}
+*/
 .site-header-nav ul {
   display: flex;
   justify-content: center;
