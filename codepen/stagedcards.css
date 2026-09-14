@@ -112,7 +112,7 @@ main {
   margin-top: 3rem;
   border-top: 1px solid #444;
   border-bottom: 1px solid #444;
-  background-color: #2b1d0c; /* Fixed invalid DARKBROWN keyword */
+  background-color: hsl(120, 93%, 90%);
 }
 
 .multicolumn > div {
