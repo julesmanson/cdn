@@ -1,1 +1,143 @@
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  background-color: #335599;
+  color: #ffffff;
+}
+p {
+  margin-block-end: 1rem;
+}
+h2 {
+  font-size: 1.5rem;
+  margin-block: 2rem 0.5rem;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+a:hover,
+a:focus-visible {
+  color: #de5757;
+}
+a:focus-visible {
+  outline: 1px solid;
+  outline-offset: 0.5rem;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.site-header {
+  border-block-start: 2px solid;
+}
+.site-header-logo {
+  padding: 2.5rem 3rem;
+}
+.site-header-logo h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+}
+.site-header-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem 2rem;
+  padding: 0.5rem 3rem;
+  border-block: 1px solid;
+  list-style: none;
+  background-color: #000000;
+}
+.site-header-nav li {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+main {
+  padding-block-start: 0.75rem;
+  background-color: #335599;
+  color: #red;
+}
+
+.page-width {
+  /* inline-size: 90%;
+  max-inline-size: 80ch; */
+  inline-size: min(80ch, 90%);
+  padding-inline: 2rem;
+  margin-inline: auto;
+}
+
+.multicolumn {
+  display: flex;
+  justify-content: center;
+  margin-block-start: 3rem;
+  border-block-start: 1px solid;
+  background-color: DARKBROWN;
+}
+
+.multicolumn > div {
+  flex: 1;
+  padding: 3rem 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid;
+}
+
+.multicolumn :nth-child(2) {
+  border: 1px solid;
+}
+
+.site-footer {
+  padding-block: 3rem;
+  color: #fff7f2;
+  background-color: #0b0b0b;
+}
+@media (min-width: 768px) {
+  .site-footer {
+    position: sticky;
+    bottom: 0;
+  }
+}
+.site-footer .page-width {
+  display: flex;
+  flex-flow: wrap;
+  gap: 1rem;
+  inline-size: min(90%, 1200px);
+}
+.footer-block {
+  flex: 0 1 15rem;
+}
+.footer-block,
+.footer-block h5 {
+  font-size: 0.85rem;
+}
+.footer-block ul {
+  list-style: none;
+}
+.footer-block li {
+  margin-block: 0.25rem;
+}
+.footer-block a {
+  color: #9b9b9b;
+}
+.footer-block a:hover,
+.footer-block a:focus-visible {
+  color: #de5757;
+}
+.footer-label {
+  padding: 3rem 2rem 0;
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 100;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  text-transform: uppercase;
+}
 
