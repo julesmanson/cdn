@@ -6,7 +6,7 @@ body {
   color: #ffffff;
 }
 p {
-  margin-block-end: 1rem;
+  margin-bottom: 1rem;
 }
 h2 {
   font-size: 1.5rem;
@@ -33,18 +33,18 @@ a:focus-visible {
 }
 
 .site-header {
-  border-block-start: 2px solid;
+  border-top: 2px solid;
 }
 .site-header-logo {
-  padding: 2.5rem 3rem;
+  padding: 1.5rem 2rem;
 }
 .site-header-logo h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.5;
   font-weight: 100;
   text-transform: uppercase;
   text-align: center;
-  white-space: nowrap;
+  white-space: wrap;
 }
 .site-header-nav ul {
   display: flex;
@@ -63,17 +63,14 @@ a:focus-visible {
 main {
   padding-block-start: 0.75rem;
   background-color: #335599;
-  color: #red;
 }
 
 .page-width {
-  /* inline-size: 90%;
-  max-inline-size: 80ch; */
   inline-size: min(80ch, 90%);
   padding-inline: 2rem;
   margin-inline: auto;
 }
-
+/*
 .multicolumn {
   display: flex;
   justify-content: center;
@@ -93,6 +90,30 @@ main {
 .multicolumn :nth-child(2) {
   border: 1px solid;
 }
+*/
+
+.multicolumn {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  background-color: #2b1d0c; /* Fixed invalid DARKBROWN keyword */
+}
+
+.multicolumn > div {
+  flex: 1;
+  padding: 3rem 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  /* Removed the individual box borders */
+}
+
+/* Add clean vertical dividers between the columns */
+.multicolumn > div:not(:last-child) {
+  border-right: 1px solid #444;
+}
+
 
 .site-footer {
   padding-block: 3rem;
