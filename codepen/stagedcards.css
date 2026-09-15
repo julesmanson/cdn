@@ -74,13 +74,6 @@ main {
   background-color: #335599;
 }
 
-.page-width {
-  inline-size: min(80ch, 90%);
-  padding-inline: 2rem;
-  margin-inline: auto;
-}
-
-
 footer {
   padding: 3rem 1.5rem 2rem 1.5rem;
   background-color: #000000;
@@ -92,19 +85,15 @@ footer {
     bottom: 0;
   }
 }
-
-footer .page-width {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   gap: 2rem;
   inline-size: min(90%, 1200px);
   margin-inline: auto;
 }
 
-/* Flexible column sizing that scales down from 1/4 to 1/3 to 1/2 dynamically */
 footer div {
-  flex: 1 1 14rem;
   font-size: 0.85rem;
 }
 
