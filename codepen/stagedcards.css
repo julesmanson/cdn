@@ -25,13 +25,13 @@ p {
   margin-bottom: 1rem;
 }
 
-footer ul {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-footer li {
+li {
   margin-block: 0.25rem;
 }
 
@@ -49,7 +49,7 @@ a:focus-visible {
   outline-offset: 0.5rem;
 }
 
-.site-header h1 {
+header h1 {
   margin: 0;
   padding: 1.5rem 2rem 1rem 2rem;
   font-size: 2rem;
@@ -60,7 +60,7 @@ a:focus-visible {
   white-space: normal;
 }
 
-.site-header-nav ul {
+nav ul {
   display: flex;
   justify-content: center;
   gap: 0.5rem 2rem;
@@ -71,7 +71,7 @@ a:focus-visible {
   margin: 0;
 }
 
-.site-header-nav li {
+nav li {
   font-size: 0.875rem;
   text-transform: uppercase;
 }
@@ -83,20 +83,15 @@ a:focus-visible {
   }
 }
 
-/* Footer wrapper spans 100% width for the black background */
 footer {
-  width: 100%;
-  background-color: #000000;
-  padding: 3rem 1.5rem 2rem 1.5rem;
-}
-
-/* Inner container constrains the grid content and centers it */
-footer .page-width {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   gap: 2rem;
   inline-size: min(90%, 1200px);
   margin-inline: auto;
+  width: 100%;
+  background-color: #000000;
+  padding: 3rem 1.5rem 2rem 1.5rem;
 }
 
 footer div {
