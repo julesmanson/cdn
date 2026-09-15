@@ -14,16 +14,13 @@ body {
 }
 
 main {
-  flex: 1;
+  padding: 3rem 2rem;
 }
 
 p {
   margin-bottom: 1rem;
 }
-h2 {
-  font-size: 1.5rem;
-  margin-block: 2rem 0.5rem;
-}
+
 
 a {
   color: currentColor;
@@ -107,19 +104,4 @@ footer li {
   margin-block: 0.25rem;
 }
 
-footer a {
-  color: #9b9b9b;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-footer a:hover,
-footer a:focus-visible {
-  color: #de5757;
-}
-
-footer a:focus-visible {
-  outline: 1px solid;
-  outline-offset: 0.25rem;
-}
 
