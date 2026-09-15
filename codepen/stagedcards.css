@@ -11,8 +11,6 @@ body {
   background-color: #335599;
   color: #ffffff;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 main {
@@ -39,11 +37,6 @@ a:focus-visible {
 a:focus-visible {
   outline: 1px solid;
   outline-offset: 0.5rem;
-}
-
-.container {
-  position: relative;
-  z-index: 1;
 }
 
 .site-header {
@@ -89,9 +82,8 @@ main {
 
 
 footer {
-  padding: 3rem 0;
-  color: #fff7f2;
-  background-color: #0b0b0b;
+  padding: 3rem 1.5rem 2rem 1.5rem;
+  background-color: #000000;
 }
 
 @media (min-width: 768px) {
@@ -114,12 +106,6 @@ footer .page-width {
 footer div {
   flex: 1 1 14rem;
   font-size: 0.85rem;
-}
-
-footer h5 {
-  font-size: 0.85rem;
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
 }
 
 footer ul {
