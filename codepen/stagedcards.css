@@ -16,7 +16,6 @@ body {
 }
 
 main {
-  flex: 1;
   padding: 3rem 2rem;
   background-color: #335599;
 }
@@ -60,14 +59,17 @@ header h1 {
   white-space: normal;
 }
 
+nav {
+  background-color: #000000;
+}
+
 nav ul {
   display: flex;
   justify-content: center;
   gap: 0.5rem 2rem;
   padding: 0.5rem 3rem;
   border-block: 1px solid;
-  list-style: none;
-  background-color: #000000;
+  list-style-type: none;
   margin: 0;
 }
 
