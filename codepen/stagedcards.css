@@ -11,10 +11,14 @@ body {
   background-color: #335599;
   color: #ffffff;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
+  flex: 1;
   padding: 3rem 2rem;
+  background-color: #335599;
 }
 
 p {
@@ -71,10 +75,6 @@ a:focus-visible {
   font-size: 0.875rem;
   text-transform: uppercase;
 }
-main {
-  padding-block-start: 0.75rem;
-  background-color: #335599;
-}
 
 @media (min-width: 768px) {
   footer {
@@ -82,19 +82,25 @@ main {
     bottom: 0;
   }
 }
+
+/* Footer wrapper spans 100% width for the black background */
 footer {
+  width: 100%;
+  background-color: #000000;
+  padding: 3rem 1.5rem 2rem 1.5rem;
+}
+
+/* Inner container constrains the grid content and centers it */
+footer .page-width {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   gap: 2rem;
   inline-size: min(90%, 1200px);
   margin-inline: auto;
-  padding: 3rem 1.5rem 2rem 1.5rem;
-  background-color: #000000;
 }
 
 footer div {
   font-size: 0.85rem;
 }
-
 
 
