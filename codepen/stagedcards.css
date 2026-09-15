@@ -76,11 +76,6 @@ main {
   background-color: #335599;
 }
 
-footer {
-  padding: 3rem 1.5rem 2rem 1.5rem;
-  background-color: #000000;
-}
-
 @media (min-width: 768px) {
   footer {
     position: sticky;
@@ -93,6 +88,8 @@ footer {
   gap: 2rem;
   inline-size: min(90%, 1200px);
   margin-inline: auto;
+  padding: 3rem 1.5rem 2rem 1.5rem;
+  background-color: #000000;
 }
 
 footer div {
